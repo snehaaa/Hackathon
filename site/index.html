@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Student CTC</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/agency.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:400,900,700,500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  
+<style type="text/css">
+.navbar{
+    background: rgba(126, 126, 126, 0.3);
+}
+
+</style>        
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container ">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top"><span></span> Blitzkrieg</a>
+        <!--                <a class="navbar-brand page-scroll" href="#page-top"><span><img height="30" src="img/logo.png"><img height="30" src="img/-bg.png"></span></a>-->
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#overview">Introduction</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#approach">Pre-Processing</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#marketing">Visualization</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#modeling">Modeling</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in"> </div>
+        <div class="intro-heading">Student CTC Prediction</div>
+        <!---<a href="#overview" class="page-scroll btn btn-xl">Tell Me More</a> --->
+      </div>
+    </div>
+  </header>
+  <!-- Overview Section -->
+  <section id="overview">
+    <div class="container" id="ss-overview"><div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Introduction</h2>
+      <h3 class="section-subheading text-muted">Predicting the annual compensation at which a participant gets placed after graduating from college</h3>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file-excel-o fa-stack-1x fa-inverse"></i>
+                    </span>
+      <h4 class="service-heading">About Data Set</h4>
+      <p class="text-muted">It consists of 3 separate datasets: Participant information, Recruitment Assessment data and Personality Test data. The Participant information has the profile information along with the placement information for every participant. The Recruitment Assessment data has score data for every participant who sits through the placement process. Similarly, the Personality test data has scores from a personality test conducted for all the participants.</p>
+    </div>
+    <div class="col-md-4">
+      <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-puzzle-piece fa-stack-1x fa-inverse"></i>
+                    </span>
+      <h4 class="service-heading">What's the Problem</h4>
+      <p class="text-muted">The provided dataset consists of information related to multiple participants from diverse backgrounds who graduated from institutes across India and have got placed at different roles in different firms.
+In this Hackathon, we aim to predict the annual compensation at which a participant will get placed once he/she graduates from his/her college.
+We aim to determine the market worth of a graduate who has just finished college under the conditions that historic data is provided
+ </p>
+    </div>
+    <div class="col-md-4">
+      <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+                    </span>
+      <h4 class="service-heading">Process Overview</h4>
+      <p class="text-muted">The first step in the process after data gathering was data understanding, we did a basic univariate analysis using power pivot in excel and tableau and came up with bunch of insights and found the level of data.
+	  Then the next step was cleaning and transformation where missing value imputation, creation of necessary calculated field and transformed such that it can be best used by the model, after which modeling is done</p>
+    </div>
+  </div>
+</div></div>
+  </section>
+  <!-- Pre-processing Section -->
+<section id="approach" class="bg-info">
+    <div class="container" id="ss-approach"><div class="row">
+  <div class="col-lg-12 text-center">
+    <h2 class="section-heading">Data Pre-Processing</h2>
+    <h3 class="section-subheading text-muted">How we worked toward a solution and what data we used</h3>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-4">
+    <!--
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                    </span>
+-->
+    <h4 class="service-heading">STEP 1:<br>Refine the Problem</h4>
+    <p class="text-muted">How do we spend our advertising budget in order to maximize ROI?</p>
+    <p class="text-muted">In order to maximize ROI, we need to advertise to the individuals and regions that are most likely to purchase an electric vehicle (EV).</p>
+    <p class="text-muted">How do we determine which individuals and regions are most likely to purchase an EV?</p>
+  </div>
+  <div class="col-md-4">
+    <!--
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+-->
+    <h4 class="service-heading">STEP 2:<br>Operationalize Based on Available Data</h4>
+    <p class="text-muted">The ideal dataset would contain every EV owner's defining qualities, so we could determine if any qualities are highly predictive of EV ownership.</p>
+    <p class="text-muted">EV owner data is not publicly available, but EV charging station location data is available as well as demographic data.</p>
+    <p class="text-muted">Use EV charging station locations as a proxy for EV ownership and use demographic data for locations with EV charging stations as a proxy for EV owner qualities.</p>
+  </div>
+  <div class="col-md-4">
+    <!--
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+-->
+    <h4 class="service-heading">STEP 3:<br>Collect and Prepare Data for Modeling</h4>
+    <p class="text-muted">Conduct some background research to decide which demographic qualities are most likely to predict EV ownership. (These turned out to be income, educational attainment, and home ownership.)</p>
+    <p class="text-muted">Download EV charging station and demographic data and wrangle it to merge them together, keep only the relevant columns, and deal with missing values.</p>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-md-4">
+    <!--
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                    </span>
+-->
+    <h4 class="service-heading">STEP 4:<br>Build Models for Markets</h4>
+    <p class="text-muted">Use various machine learning approaches to identify the demographic attributes that are more likely to be associated with potential buyers of Electric Vehicles</p>
+
+  </div>
+  <div class="col-md-4">
+    <!--
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+-->
+    <h4 class="service-heading">STEP 5:<br>Enhance Markets Information with Ad rates</h4>
+    <p class="text-muted">Although the models identify the best target markets, it may not be cost effective to advertise to these locations. </p>
+    <p class="text-muted">Identified and used additional market based advertisement rates to find the right balance between effectiveness and cost. </p>
+  </div>
+
+  <div class="col-md-4">
+    <!--
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+-->
+    <h4 class="service-heading">STEP 6:<br>Build Marketing Tools</h4>
+    <p class="text-muted">Although models and data-sets identify effective and efficient markets, the marketing team still wants to fine-tune how they use this information. So we built a dashboard that provides the information to marketing experts in easily consumable formats.</p>
+  </div>
+
+
+</div>
+</div>
+  </section>
+  
+    <!-- Visualization -->
+<section id="marketing" class="bg-danger">
+    <div class="container" id="ss-marketing"><div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Visualisation</h2>
+      <h3 class="section-subheading text-muted">create interactive charts to gain business insights</h3>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Lead Rating</h3>
+    <br>
+    <p>The Marketing team acquires "leads" of prospective electric car buyers from different sources - it could be an internet user searching for electric cars to list of people registering certain brands of cars at DMVs. Once a lead is acquired, marketing will pursue the lead through various channels. For Faraday motors, it is imperative that we be able to rate the lead in terms of likelihood that they will buy an electric car.</p>
+    <p>
+      Most lead sources will provide basic demographic attributes of the person including age, gender, household income range, highest education, home ownership and location. To create a rating system for leads, we re-used the Random Forest model and limited it to these demographic attributes. We expanded the features to include each of the categorical variables - for e.g Female,25-35,100K&gt;Income&gt;150K, Female,35-50,100K&gt;Income&gt;150K etc.  We re-ran the models and then extracted the relative feature importance scores for these attributes and normalized the scores. This relative ranking was then used to create a simplified linear model to rate the leads.  
+    </p>
+    <p>The lead rating algorithm we built could be used as a standalone calculator, real-time rating system or bulk batch rater.</p>
+    <br>
+  </div>
+  <div class="row">
+    <h3>Persona modeling</h3>
+    <br>
+    <p>To fine-tune the process of data-driven marketing decisions, we also helped build a persona modeling tool. Buyer personas (sometimes referred to as marketing personas) are fictional, generalized representations of your ideal customers. Personas help us all -- in marketing, sales, product, and services -- internalize the ideal customer we're trying to attract, and relate to our customers as real humans. We built these personas based on our models that predicts the demographic attributes of our prospective customer.
+    </p>
+    <br>
+  </div>  
+  <div class="row">
+    <h3>Ad rates and markets</h3>
+    <br>
+    <p>The modeling effort helped us identify the best markets and demographics of our potential buyers; but that information by itself is not sufficient to make an effective marketing strategy. In addition to demographic models it is necessary to build a cost model to identify the markets that not only has good target audience but also are cheaper to advertise to. For instance, is it better to advertise in New York city, which could be very expensive and reach a wider audience or advertise in smaller and cheaper cities but still reach a very targeted audience?</p>
+    <p>
+      In order to help this decision making, we used the regional advertisement rates from the two leading outdoor display ad providers, Clear Channel Outdoor and Lamar. The assumption made here is that the cost of display advertisement is a proxy to the regional cost of advertisement across other marketing channels.
+    </p>
+    <br>
+  </div>
+  <div class="row">
+    <h3>Tools, Dashboard and Visualization</h3>
+    <br>
+    <p>Finally, to consolidate all the tools we built for the marketing team in an easy to use package, we built a <a href="../portal/index.html">marketing data portal</a>. As we formulate more models and data-driven decision parameters, we will enhance the toolkit with additional tools and visualizations.
+    </p>
+    <br>
+  </div>
+</div></div>
+  </section>
+  
+    <!-- Markets section -->
+<section id="ss-markets" class="bg-success">
+    <div class="container" id="sp-markets"><div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Markets</h1>
+
+
+<script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+<!---<div class="tableauPlaceholder" style="width: 1004px; height: 769px; position: relative; overflow: hidden; display: block;"><noscript><a href='#'>
+<img alt='Regional EV Marketing Selection Tool ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;latest_2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><iframe frameborder="0" marginheight="0" marginwidth="0" title="data visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" width="1004" height="769" style="display: block; margin: 0px; padding: 0px; border: none; width: 1000px; height: 727px;" src="http://public.tableau.com/views/latest_2/Dashboard1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:showVizHome=no&amp;:showTabs=y&amp;:loadOrderID=0"></iframe></div>
+--->
+<div class='tableauPlaceholder' id='viz1539727808284' style='position: relative'><noscript><a href='#'>
+<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;20181017_Student_CTC_Univariate&#47;UnivariateAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='20181017_Student_CTC_Univariate&#47;UnivariateAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;20181017_Student_CTC_Univariate&#47;UnivariateAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1539727808284');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+
+
+        </div>
+    </div>
+</div>
+</div>
+  </section>
+  <!-- Modeling Section -->
+<section id="modeling" class="bg-light-gray">
+    <div class="container" id="ss-modeling"><div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Modeling</h2>
+      <h3 class="section-subheading text-muted">Applying Machine Learning to Determine<br>Demographic Features Most Associated with EV Ownership</h3>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Initial Feature Selection and Model Evaluation</h3>
+    <br>
+    <p>The urban areas data set contains aggregated EV charging stations for 3,600 urban areas and we used the raw station count as our dependent variable or label and turned the modeling exercise into a classic supervised learning problem. The predictors or independent variables are the demographic covariates from the Census American Community Survey data and EV incentives. The diagram below illustrates our modeling methodology and approach.</p>
+    <br>
+    <div class="row text-center"><img src="../modelingmethodology/modeling_methodology.png" alt="" width="750"></div>
+    <br>
+    <p>We took two parallel paths, a path for finding the best algorithm for the problem with an initial feature set and another path for systematic feature search and optimization, to arrive at an optimal model. We selected an initial set of the features from the original set of 73 demographic features, based on our ‘gut’ instinct and recent EV surveys. The initial features selected include number of high-income households, education levels (e.g., % of college graduates), home ownership, and the populations of different age groups.</p>
+    <p>Our initial models contained 10 and 25 features and we ran the following 4 different learners, two linear learners: linear regression and logistic regression, and two ensemble learners: Random Forest and extremely randomized decision trees. To evaluate the different learners, we first examined the various scores found that the average accuracy and the R^2 scores were most useful. We then visually examined the predicted charging station counts vs. the actual charing station counts.</p>
+    <div class="row text-center"><img src="../modelingmethodology/table.png" alt="" width="500"></div>
+    <br>
+    <br>
+    <p>Our visual examination was critical for us to quickly assess different learners to choose the best algorithm for the problem. Overfitting was obvious visually: when the predicted vs actual station counts for training set all line up diagonally while the predicted vs. actual counts for the test set scatter or cluster above or below the diagonal line, we know that the algorithm overfitted the training set. We found that ensemble learners were more accurate than the linear learners by 14-27%. Random Forest was the best learner based on our evaluation criteria.
+    </p>
+    <div class="row text-center"><img src="../modelingmethodology/Fig-LinearRegression.png" alt="" width="500"><img src="../modelingmethodology/Fig-LogisticRegression.png" alt="" width="500"></div>
+    <div class="row text-center"><img src="../modelingmethodology/Fig-RandomForest.png" alt="" width="500"><img src="../modelingmethodology/Fig-ExtraTrees.png" alt="" width="500"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row"></div>
+    <div class="col-lg-4 "></div>
+    <div class="col-lg-4 "></div>
+  </div>
+  <h3>Feature Selection and Minimal Optimal Model</h3>
+  <p>Our goal is to discover demographic attributes that are not obviously correlated with EV prevalence or interest. We used a novel feature selection algorithm proposed by Kursa and Rudnicki (http://www.jstatsoft.org/v36/i11/paper). The algorithm iteratively eliminates features via statistical tests. We used the Python implemention by Daniel Homola (https://bitbucket.org/danielhomola/boruta_py/). Running the selection algorithm for all available features consistently returned a set of 9 or so attributes which provided us with valuable insights. Many of the significant features returned by the search algorithm coincide with our initial instinct. Features such as the number of households with income over $100,000, the populations of young people in the 25 to 34 year old and the 35 to 44 year old age groups, and total number of college graduates, showed up consistently in the outputs. We confirmed that the raw number of EV charging stations did not track population and other features were more significant for EV prevalence. A result that we were hoping to get from the start!</p>
+  <p>Combining the feature search outputs and that from the ad-hoc modeling, we selected 14 features for our “minimal optimal” feature set to feed into a Random Forest model. Theoretically, Occam’s Razor calls for models that contain all that is necessary but nothing more. Practically, a minimal optimal model is attractive for it provides the best explanation of the data and also has the most predictive power but with the smallest set of relevant features. Our final model has excellent predictive power with scores &gt;85% and is also not sensitive to the number of features as long as the most significant features such as, the households of the highest income brackets and the population of young age groups, are included. We used the output from our optimal model to predict the “best markets” for Faraday Motor’s marketing division.
+  </p>
+  <div class="row text-center"><img src="../modelingmethodology/Fig-RandomForest-Optimal.png" alt="" width="500"></div>
+</div>
+</div>
+  </section>
+  <!-- Conclusion Section -->
+<section id="nextsteps">
+    <div class="container" id="ss-nextsteps"><div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Conclusion</h2>
+      <h3 class="section-subheading text-muted">Future Improvements and Follow-ups</h3>
+    </div>
+  </div>
+  <div class="row text-left">
+    <div class="col-md-12 " style="font-size:18px;">
+      <ol>
+        <li>
+          <strong>Field experiment</strong>: Conduct an A/B test for individual ad targeting (target a set of people we think are likely to purchase and EV and a set of random people and compare click rates among both groups; ideally the click rate would be higher for our targeted group compared to the random group). This could also help validate the power of the models.
+        </li>
+        <li>
+          Look at dates of EV stations opening and determine which locations are growing fastest (<strong>time series analysis</strong>), take this into account in our predictive models
+        </li>
+        <li>
+          Acquire <strong>additional data</strong> such as:
+          <ul>
+            <li>Regional Car sales trend month over month to find the best time to influence buyers</li>
+            <li>Weather data to find if it has an influence on people's interest in electric cars</li>
+            <li>More detailed regional advertising costs</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div></div>
+  </section>
+  <!-- Team Section -->
+<section id="team" class="bg-success">
+    <div class="container" id="ss-team"><div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Our Amazing Team</h2>
+<!--       <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+ -->    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="team-member">
+        <img src="img/team/4.png" class="img-responsive img-circle" alt="">
+        <h4>Arjun </h4>
+<!--         <p class="text-muted"></p>
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a>
+             <li><a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="team-member">
+        <img src="img/team/4.png" class="img-responsive img-circle" alt="">
+        <h4>S B Iqbal</h4>
+<!--         <p class="text-muted"></p>
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="team-member">
+        <img src="img/team/4.png" class="img-responsive img-circle" alt="">
+        <h4>Shawrya Sharma</h4>
+<!--         <p class="text-muted"></p>
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+	    <div class="col-sm-4">
+      <div class="team-member">
+        <img src="img/team/4.png" class="img-responsive img-circle" alt="">
+        <h4>Sneha Sinha</h4>
+<!--         <p class="text-muted"></p>
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <p class="large text-muted">PGPDSE Course students at Great Learning.</p>
+	  
+    </div>
+  </div>
+</div>
+</div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+		<span class="copyright">Thank You<i class="fa fa-smile-o"></i></span>
+	
+          <!----<span class="copyright">Copyright &copy; Farady Motors 2015</span>--->
+<!--           <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul> -->
+        </div>
+        <div class="col-md-4">
+<!--           <ul class="list-inline quicklinks">
+            <li><a href="#">Privacy Policy</a>
+            </li>
+            <li><a href="#">Terms of Use</a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/cbpAnimatedHeader.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/agency.js"></script>
+</body>
+
+</html>
+<script type="text/javascript">
+function subpage(id, page) {
+  $(id).load(page, function() {
+    if ($("#morris-area-chart").size() > 0) {
+      mdata();
+    }
+  });
+}
+
+$(document).ready(function() {
+  subpage("#ss-approach", "/site/sections/approach.html");
+  subpage("#ss-team", "/site/sections/team.html");
+  subpage("#ss-nextsteps", "/site/sections/nextsteps.html");
+  subpage("#ss-modeling", "/site/sections/modeling.html");
+  subpage("#ss-overview", "/site/sections/overview.html");
+  subpage("#ss-marketing", "/site/sections/marketing.html");
+  subpage("#sp-lead-rating", "/portal/pages/rating.html");
+  subpage("#sp-markets", "/portal/pages/markets.html");
+  subpage("#sp-personas", "/portal/pages/personas.html");
+});
+</script>
+<!-- <script src="http://localhost:35729/livereload.js"></script> -->
